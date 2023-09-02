@@ -1,32 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Playfair+Display&family=Rubik:ital@1&display=swap');
 
 * {
   margin: 0;
 }
 
 nav {
-  height: 15vh;
+  height: 10vh;
   display: flex;
-  justify-content: space-between;
-  padding: 5vw 10vw;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5vh 10vw;
   color: white;
   background-color: #27374d;
 }
 
 h1 {
-  font: 2.5rem 'Phudu', cursive;
+  font: 6vh 'Phudu', cursive;
 }
 
-@media only screen and (max-width: 900px) {
-  #icon {
-    align-self: center;
-    font-size: 4rem;
-  }
+#nav-bar {
+  display: none;
+}
 
-  #nav-bar, #title {
-    display: none;
-  }
-} 
+#about {
+  background-color: #526d82;
+  height: 85vh;
+}
+
+#about h2 {
+  font: 4vh 'Phudu', cursive;
+  color: #27374d;
+  padding: 2vh;
+  text-align: center;
+}
+
+#about div {
+  font: 3.5vh 'Rubik', sans-serif;
+  color: white;
+  padding: 0 3vh;
+}
+
+.secondary-word {
+  font: 5vh 'Dancing Script', cursive;
+}
 
 @media only screen and (min-width: 900px) {
   /* For desktop display */
@@ -38,6 +54,7 @@ h1 {
 
   nav {
     padding: 1vw 5vw;
+    height: 15vh;
   }
 
   #nav-bar {
@@ -52,14 +69,5 @@ h1 {
     color: white;
     align-self: center;
     font-size: 2.5vw;
-  }
-
-  #icon, #title-br {
-    display: none;
-  }
-
-  section {
-    background-color: #526d82;
-    height: 85vh;
   }
 }

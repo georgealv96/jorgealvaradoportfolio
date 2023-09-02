@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Playfair+Display&family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Phudu&family=Playfair+Display&display=swap');
 
 * {
   margin: 0;
@@ -23,25 +23,23 @@ h1 {
 }
 
 #about {
-  background-color: #526d82;
+  padding: 0 15vh;
+  background-color: #9DB2BF;
   height: 85vh;
 }
 
 #about h2 {
-  font: 4vh 'Phudu', cursive;
+  font: 6vh 'Phudu', cursive;
+  padding: 3vw 0;
   color: #27374d;
-  padding: 2vh;
   text-align: center;
 }
 
-#about div {
-  font: 3.5vh 'Rubik', sans-serif;
-  color: white;
+#about p {
+  font: 3.5vh 'Nunito Sans', sans-serif;
+  color: #3c5161;
   padding: 0 3vh;
-}
-
-.secondary-word {
-  font: 5vh 'Dancing Script', cursive;
+  text-align: center;
 }
 
 @media only screen and (min-width: 900px) {
@@ -53,6 +51,8 @@ h1 {
   }
 
   nav {
+    display: flex;
+    justify-content: space-between;
     padding: 1vw 5vw;
     height: 15vh;
   }
@@ -69,5 +69,14 @@ h1 {
     color: white;
     align-self: center;
     font-size: 2.5vw;
+  }
+
+  #about {
+    height: 82vh;
+  }
+
+  #about h2 {
+    padding: 7vh 0;
+    font-size: 5vw;
   }
 }

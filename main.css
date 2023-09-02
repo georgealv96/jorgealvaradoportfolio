@@ -23,14 +23,12 @@ h1 {
 }
 
 #about {
-  padding: 0 15vh;
   background-color: #9DB2BF;
-  height: 85vh;
 }
 
 #about h2 {
   font: 6vh 'Phudu', cursive;
-  padding: 3vw 0;
+  padding: 3vh 0;
   color: #27374d;
   text-align: center;
 }
@@ -38,8 +36,14 @@ h1 {
 #about p {
   font: 3.5vh 'Nunito Sans', sans-serif;
   color: #3c5161;
-  padding: 0 3vh;
+  padding: 0 3vh 3vh;
   text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  br {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -73,6 +77,7 @@ h1 {
 
   #about {
     height: 82vh;
+    padding: 0 15vh;
   }
 
   #about h2 {

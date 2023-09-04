@@ -6,11 +6,11 @@
 
 nav {
   height: 10vh;
-  width: 80vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5vh 10vw;
+  padding: 1vh 0;
   color: white;
   background-color: #27374d;
   position: fixed;
@@ -21,16 +21,22 @@ h1 {
   font: 6vh 'Phudu', cursive;
 }
 
-#nav-bar {
+br, #social span, #nav-bar {
   display: none;
 }
 
-#about {
+main {
   background-color: #9DB2BF;
-  padding-top: 15vh;
+  padding: 12vh 0;
 }
 
-#about h2 {
+#about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
   font: 5vh 'Phudu', cursive;
   padding: 3vh 0;
   color: #27374d;
@@ -44,11 +50,27 @@ h1 {
   text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
-  br {
+#social {
+  /* background-color: yellow; */
+  width: 50vw;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#social a {
+  font: 5vh 'Nunito Sans', sans-serif;
+  color: #27374d;
+  text-decoration: none;
+
+}
+
+/* @media only screen and (max-width: 900px) {
+  br, #social span, #nav-bar {
     display: none;
   }
-}
+} */
 
 @media only screen and (min-width: 900px) {
   /* For desktop display */
@@ -61,7 +83,7 @@ h1 {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 1vw 5vw;
+    padding: 1vh 5vw;
     height: 12vh;
     width: 90vw;
   }
@@ -80,13 +102,17 @@ h1 {
     font-size: 2.5vw;
   }
 
-  #about {
-    height: 88vh;
-    padding: 12vh 15vh 0;
+  main {
+    padding: 20vh 0 3vh;
   }
 
-  #about h2 {
-    padding: 10vh 0 6vh;
+  #about {
+    min-height: 0;
+    padding: 3vh 12vw;
+  }
+
+  section h2 {
+    padding: 0 0 6vh;
     font-size: 8vh;
   }
 }

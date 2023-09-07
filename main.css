@@ -27,11 +27,14 @@ br, #social span, #nav-bar {
 
 main {
   background-color: #9DB2BF;
-  padding: 12vh 0;
+  padding: 12vh 0 0vh;
+}
+
+section {
+  min-height: 88vh;
 }
 
 #about {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -51,26 +54,18 @@ section h2 {
 }
 
 #social {
-  /* background-color: yellow; */
   width: 50vw;
+  padding-top: 5vh;
   align-self: center;
   display: flex;
   justify-content: space-around;
-
 }
 
 #social a {
   font: 5vh 'Nunito Sans', sans-serif;
   color: #27374d;
   text-decoration: none;
-
 }
-
-/* @media only screen and (max-width: 900px) {
-  br, #social span, #nav-bar {
-    display: none;
-  }
-} */
 
 @media only screen and (min-width: 900px) {
   /* For desktop display */
@@ -103,16 +98,16 @@ section h2 {
   }
 
   main {
-    padding: 20vh 0 3vh;
+    padding: 14vh 0 0vh;
   }
 
-  #about {
-    min-height: 0;
-    padding: 3vh 12vw;
+  section {
+    min-height: 86vh;
+    padding: 0 12vw;
   }
 
   section h2 {
-    padding: 0 0 6vh;
+    padding: 5vh 0;
     font-size: 8vh;
   }
 }

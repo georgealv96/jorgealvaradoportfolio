@@ -69,15 +69,24 @@ section h2 {
 
 #skills ul {
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 #skills li {
   display: block;
   text-align: center;
   font: 3.5vh 'Nunito Sans', sans-serif;
-  color: #3c5161;
+  color: #adbfcb;
+  background-color: #27374d;
+  width: 50vw;
+  border-radius: 20px;
+  margin: 0 auto 1vh;
+  position: relative;
+  left: 30px;
+}
+
+#skills .left {
+  position: relative;
+  left: -30px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -117,7 +126,6 @@ section h2 {
   section {
     min-height: 86vh;
     padding: 0 12vw;
-    /* border: solid 2px yellow; */
   }
 
   section h2 {

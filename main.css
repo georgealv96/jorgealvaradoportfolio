@@ -15,6 +15,7 @@ nav {
   background-color: #83580B;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 h1 {
@@ -26,7 +27,7 @@ br, #social span, #nav-bar {
 }
 
 main {
-  background-color: #D9B650;
+  background-color: #F5DD7B;
   padding: 12vh 0 0;
 }
 
@@ -67,6 +68,10 @@ p {
   text-decoration: none;
 }
 
+#skills {
+  min-height: auto;
+}
+
 #skills > p {
   display: none;
 }
@@ -79,7 +84,7 @@ p {
   display: block;
   text-align: center;
   font: 3.5vh 'Nunito Sans', sans-serif;
-  color: #e6d39a;
+  color: #F5DD7B;
   background-color: #83580B;
   width: 50vw;
   border-radius: 20px;
@@ -91,6 +96,42 @@ p {
 #skills .left {
   position: relative;
   left: -30px;
+}
+
+img {
+  width: 70vw;
+}
+
+.project-item > h3 {
+  grid-area: title;
+  font: 3.5vh 'Nunito Sans', sans-serif;
+}
+
+.project-item > a {
+  grid-area: image;
+}
+
+.repo {
+  grid-area: repo;
+  font: 2vh 'Nunito Sans', sans-serif;
+  background-color: red;
+}
+
+.app {
+  grid-area: app;
+  font: 2vh 'Nunito Sans', sans-serif;
+  background-color: yellow;
+}
+
+.project-item {
+  display: grid;
+  grid-template-areas: 
+    "title title"
+    "image image"
+    "repo app";
+  justify-content: center;
+  text-align: center;
+  margin: 0 10vw 2vh;
 }
 
 @media only screen and (min-width: 900px) {
@@ -139,14 +180,14 @@ p {
 
   #skills > p {
     display: block;
-    padding-bottom: 7.5vh;
+    padding: 0vh 0 7.5vh;
   }
 
   #skills ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    gap: 30px;
+    gap: 40px;
   }
 
   #skills li {

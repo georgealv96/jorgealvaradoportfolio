@@ -27,7 +27,7 @@ br, #social span, #nav-bar {
 
 main {
   background-color: #9DB2BF;
-  padding: 12vh 0 0vh;
+  padding: 12vh 0 0;
 }
 
 section {
@@ -67,6 +67,19 @@ section h2 {
   text-decoration: none;
 }
 
+#skills ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#skills li {
+  display: block;
+  text-align: center;
+  font: 3.5vh 'Nunito Sans', sans-serif;
+  color: #3c5161;
+}
+
 @media only screen and (min-width: 900px) {
   /* For desktop display */
 
@@ -104,6 +117,7 @@ section h2 {
   section {
     min-height: 86vh;
     padding: 0 12vw;
+    /* border: solid 2px yellow; */
   }
 
   section h2 {

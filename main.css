@@ -106,7 +106,7 @@ img {
 .project > h3 {
   grid-area: title;
   font: 3.5vh 'Nunito Sans', sans-serif;
-  /* color: #F5DD7B; */
+  color: #5d4009;
 }
 
 .project > a {
@@ -115,18 +115,25 @@ img {
 
 .project > p {
   grid-area: technologies;
+  padding: 1vh;
+  font-family: sans-serif;
+  color: #5d4009;
 }
 
 .repo {
   grid-area: repo;
+  margin-right: 5px;
 }
 
 .app {
   grid-area: app;
+  margin-left: 5px;
 }
 
 .project > div {
   font: 2vh 'Nunito Sans', sans-serif;
+  background-color: #83580B;
+  color: #F5DD7B;
 }
 
 .project {
@@ -138,9 +145,7 @@ img {
     "repo app";
   justify-content: center;
   text-align: center;
-  margin: 0 10vw 2vh;
-  /* background-color: #83580B; */
-  padding: 2vh;
+  padding: 0 10vw 5vh;
 }
 
 @media only screen and (min-width: 900px) {

@@ -47,7 +47,7 @@ section h2 {
   text-align: center;
 }
 
-p {
+#about > p {
   font: 3.5vh 'Nunito Sans', sans-serif;
   color: #5d4009;
   padding: 0 3vh 3vh;
@@ -99,39 +99,48 @@ p {
 }
 
 img {
-  width: 70vw;
+  width: 100%;
+  height: 100%;
 }
 
-.project-item > h3 {
+.project > h3 {
   grid-area: title;
   font: 3.5vh 'Nunito Sans', sans-serif;
+  /* color: #F5DD7B; */
 }
 
-.project-item > a {
+.project > a {
   grid-area: image;
+}
+
+.project > p {
+  grid-area: technologies;
 }
 
 .repo {
   grid-area: repo;
-  font: 2vh 'Nunito Sans', sans-serif;
-  background-color: red;
 }
 
 .app {
   grid-area: app;
-  font: 2vh 'Nunito Sans', sans-serif;
-  background-color: yellow;
 }
 
-.project-item {
+.project > div {
+  font: 2vh 'Nunito Sans', sans-serif;
+}
+
+.project {
   display: grid;
   grid-template-areas: 
     "title title"
     "image image"
+    "technologies technologies"
     "repo app";
   justify-content: center;
   text-align: center;
   margin: 0 10vw 2vh;
+  /* background-color: #83580B; */
+  padding: 2vh;
 }
 
 @media only screen and (min-width: 900px) {

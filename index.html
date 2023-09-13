@@ -8,18 +8,18 @@
   <title>Jorge Alvarado</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript">
-    function scrollToSection(pixels){
-      $('html, body').animate({scrollTop: pixels}, 800);
+    function scrollToSection(vh){
+      $('html, body').animate({scrollTop: window.innerHeight*vh}, 600);
     }
     </script>
 </head>
-<body>
+<body onload="scrollToSection(0)">
   <nav>
     <h1 id="title" onclick="scrollToSection(0)">Jorge Alvarado</h1>
     <div id="nav-bar">
-      <div onclick="scrollToSection(640)">/ skills</div>
-      <div onclick="scrollToSection(1230)">/ projects</div>
-      <div onclick="scrollToSection(2500)">/ certifications</div>
+      <div onclick="scrollToSection(0.8)">/ skills</div>
+      <div onclick="scrollToSection(1.52)">/ projects</div>
+      <div onclick="scrollToSection(3.1)">/ certifications</div>
     </div>
   </nav>
   <main>

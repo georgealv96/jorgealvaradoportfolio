@@ -22,7 +22,7 @@ h1 {
   font: 6vh 'Phudu', cursive;
 }
 
-br, #social span, #nav-bar {
+br, #social span, #nav-bar, #skills > p {
   display: none;
 }
 
@@ -33,12 +33,13 @@ main {
 
 section {
   min-height: 88vh;
+  padding-bottom: 3vh;
 }
 
 #about {
   display: flex;
   flex-direction: column;
-  padding: 3vh 0;
+  padding-top: 3vh;
 }
 
 section h2 {
@@ -56,25 +57,34 @@ section h2 {
 }
 
 #social {
-  width: 50vw;
+  width: 80vw;
   align-self: center;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 2vh;
 }
 
 #social a {
+  width: 6vh;
+  text-align: center;
   font: 5vh 'Nunito Sans', sans-serif;
-  color: #83580B;
+  color: #F5DD7B;
   text-decoration: none;
+  background-color: #83580B;
+  padding: 1vh 1vh 0;
+  border-radius: 1vh;
+}
+
+#about h3 {
+  font: bold 3vh sans-serif;
+  color: #83580B;
+  padding: 2vh 0;
+  align-self: center;
+
 }
 
 #skills {
   min-height: auto;
-  padding-bottom: 3vh;
-}
-
-#skills > p {
-  display: none;
 }
 
 #skills ul {
@@ -140,6 +150,10 @@ section h2 {
   justify-content: center;
   text-align: center;
   padding: 0 10vw 5vh;
+}
+
+.project:last-of-type {
+  padding-bottom: 2vh;
 }
 
 .project a {

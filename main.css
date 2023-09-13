@@ -52,7 +52,7 @@ section h2 {
 #about > p {
   font: 3.5vh 'Nunito Sans', sans-serif;
   color: #5d4009;
-  padding: 0 3vh 3vh;
+  padding: 0 3vh 2vh;
   text-align: center;
 }
 
@@ -64,14 +64,14 @@ section h2 {
   padding-bottom: 2vh;
 }
 
-#social a {
+#social i {
   width: 6vh;
   text-align: center;
   font: 5vh 'Nunito Sans', sans-serif;
   color: #F5DD7B;
   text-decoration: none;
   background-color: #83580B;
-  padding: 1vh 1vh 0;
+  padding: 1vh 1vh;
   border-radius: 1vh;
 }
 
@@ -116,15 +116,16 @@ section h2 {
 
 .project > h3 {
   grid-column: 1 / 3;
-  font: 3.5vh 'Nunito Sans', sans-serif;
+  font: 4vh 'Nunito Sans', sans-serif;
   color: #5d4009;
 }
 
 .project > p {
+  font-size: 1.25rem;
   grid-column: 1 / 3;
   padding: 2vh;
   font-family: sans-serif;
-  color: #5d4009;
+  color: #83580B;
 }
 
 .repo {
@@ -138,15 +139,16 @@ section h2 {
 }
 
 .project > div {
-  font: 2vh 'Nunito Sans', sans-serif;
+  font: 3vh 'Nunito Sans', sans-serif;
   background-color: #83580B;
   color: #F5DD7B;
+  border-radius: 1vh;
 }
 
 .project {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 5vh repeat(3, min-content);
+  grid-template-rows: 6vh repeat(3, min-content);
   justify-content: center;
   text-align: center;
   padding: 0 10vw 5vh;
@@ -187,8 +189,9 @@ section h2 {
   /* For desktop display */
 
   h1 {
-    font: 9vh 'Phudu', cursive;
+    font: 8vh 'Phudu', cursive;
     align-self: center;
+    cursor: pointer;
   }
 
   nav {
@@ -206,11 +209,12 @@ section h2 {
     justify-content: space-around;
   }
 
-  #nav-bar a {
+  #nav-bar div {
     text-decoration: none;
     color: white;
     align-self: center;
     font-size: 2.5vw;
+    cursor: pointer;
   }
 
   main {
@@ -218,18 +222,46 @@ section h2 {
   }
 
   section {
-    min-height: 86vh;
-    padding: 0 12vw;
+    min-height: 80vh;
+    padding: 0 12vw 5vh;
+  }
+
+  section:first-of-type {
+    padding-bottom: 0;
   }
 
   section h2 {
-    padding: 5vh 0;
+    padding: 2vh 0 5vh;
     font-size: 8vh;
+  }
+
+  #about > p {
+    padding-bottom: 4vh;
+  }
+
+  #about > h3 {
+    display: none;
+  }
+
+  #social a {
+    display: flex;
+    text-decoration: none;
+    padding-top: 5vh;
+  }
+
+  #social span {
+    display: block;
+    background-color: #F5DD7B;
+    color: #83580B;
+    font: 5vh 'Nunito Sans', sans-serif;
   }
 
   #skills > p {
     display: block;
-    padding: 0vh 0 7.5vh;
+    text-align: center;
+    font: 3vh 'Nunito Sans', sans-serif;
+    color: #5d4009;
+    padding-bottom: 5vh;
   }
 
   #skills ul {
@@ -254,7 +286,7 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, min-content);
-    padding: 0 5vw;
+    padding: 0 5vw 5vh;
   }
 
   #projects > h2 {

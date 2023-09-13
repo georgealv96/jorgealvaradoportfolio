@@ -6,14 +6,20 @@
   <link rel="stylesheet" href="main.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Jorge Alvarado</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    function scrollToSection(pixels){
+      $('html, body').animate({scrollTop: pixels}, 800);
+    }
+    </script>
 </head>
 <body>
   <nav>
-    <h1 id="title">Jorge Alvarado</h1>
+    <h1 id="title" onclick="scrollToSection(0)">Jorge Alvarado</h1>
     <div id="nav-bar">
-      <a href="">/ skills</a>
-      <a href="">/ projects</a>
-      <a href="">/ certifications</a>
+      <div onclick="scrollToSection(640)">/ skills</div>
+      <div onclick="scrollToSection(1230)">/ projects</div>
+      <div onclick="scrollToSection(2500)">/ certifications</div>
     </div>
   </nav>
   <main>
@@ -24,11 +30,11 @@
       <p>I'm originally from Caracas, Venezuela but I've been based in Salt Lake City, Utah since 2017. I speak Spanish and English. And my favorite programming language, as of now, is JavaScript.</p>
       <br>
       <p>I consider myself a very detail-oriented person and I'm always aiming for excellence and success. I also like creating things from scratch — just like this website!</p>
-      <h3>Contact me:</h3>
+      <h3>CONTACT:</h3>
       <div id="social">
-        <a href="https://www.linkedin.com/in/jorge06alvarado/"><i class='bx bxl-linkedin-square'></i><span> LinkedIn</span></a>
-        <a href="https://github.com/georgealv96"><i class='bx bxl-github' ></i><span> GitHub</span></a>
-        <a href="mailto: george1996alvarado@gmail.com"><i class='bx bx-envelope' ></i></a>
+        <a href="https://www.linkedin.com/in/jorge06alvarado/"><i class='bx bxl-linkedin-square'></i><span>&nbspLinkedIn</span></a>
+        <a href="https://github.com/georgealv96"><i class='bx bxl-github' ></i><span>&nbspGitHub</span></a>
+        <a href="mailto: george1996alvarado@gmail.com"><i class='bx bx-envelope'></i><span>&nbspEmail</span></a>
       </div>
     </section>
     <section id="skills">
